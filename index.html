@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color:#ffffff" id="backcolor">
+<title>is it halloween?</title>
+<h1>is it halloween?</h1>
+<h1 style="font-Size:200px" id="response"></h1>
+<h5><a id="why" href="why.html"></a></h5>
+<script>
+let currentday = new Date().getDate()
+let currentmonth = new Date().getMonth() + 1
+if (currentmonth === 10 && currentday === 31) {
+document.getElementById("response").textContent = "YES IT IS!!"; document.getElementById("backcolor").style.backgroundColor = "#fa8500"
+} else {
+document.getElementById("response").textContent = "NO"; document.getElementById("why").textContent = "why isnt it halloween:("}
+</script>
+
+
+    </body>
+</html>
